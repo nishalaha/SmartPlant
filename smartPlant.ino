@@ -7,11 +7,11 @@ void loop() {
   int val;
   val = analogRead(0);
   Serial.println(val);
-  delay(1000);
+  delay(180000);
   if(val < 280){
     digitalWrite(LED_BUILTIN, HIGH);
-    delay(500);
+    }
+    else{
     digitalWrite(LED_BUILTIN, LOW);
-    delay(500);
+    }
   }
-}
